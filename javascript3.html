@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function the_main() {
+				var field = document.getElementById("main").value;
+				if (field.length < 5)
+					document.getElementById("main1").innerHTML= "Input isn't accepted as input is quite short" ;
+				else
+					document.getElementById("main1").innerHTML = "Input is accepted" ;
+			}
+			function the_mainn() {
+				var field = document.getElementById("mainn").value;
+				if (field !=  "")
+					document.getElementById("main2").innerHTML= "accepted as input" ;
+				else
+					document.getElementById("main2").innerHTML = "Input isn't accepted" ;
+			}
+		</script>
+	</head>
+	<body>
+		<p>Javascript something</p>
+		<input  id="main" type="text" onblur="the_main();"/><span id="main1"></span>
+		<input  id="mainn" type="text" onblur="the_mainn();"/><span id="main2"></span>
+	</body>
+</html>
